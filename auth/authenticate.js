@@ -10,7 +10,6 @@ module.exports = {
   authenticate, 
 };
 
-
 function authenticate(req, res, next) {
   const token = req.get('Authorization');
   const secret = jwtKey 
